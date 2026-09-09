@@ -45,9 +45,10 @@ enrichis de Google.
 
 `robots.txt` et `sitemap.xml` sont à la racine.
 
-⚠️ **Le domaine `https://www.fric-cafe-express.tg/` est un espace réservé.**
-Remplacez-le partout avant mise en ligne : `canonical`, balises `og:`,
-`robots.txt` (ligne Sitemap) et `sitemap.xml`.
+Domaine canonique : **https://fric-cafe-express.tg/**, sans `www`. Il figure
+dans `canonical`, les balises `og:`, `robots.txt` (ligne Sitemap) et
+`sitemap.xml`. Déclarez aussi `www.fric-cafe-express.tg` dans Render et
+redirigez-le vers le domaine nu : une seule adresse indexée.
 
 ## Accessibilité
 

@@ -213,6 +213,8 @@ section{padding:88px 0}
 .hours .d{font-weight:700}
 .hours .h{font-family:"IBM Plex Mono",monospace;font-size:.86rem;color:var(--muted);font-variant-numeric:tabular-nums}
 .hours li.now,.hours li.now .h{color:var(--orange)}
+.hours li.closed .d{opacity:.6}
+.hours li.closed .h{font-weight:600;letter-spacing:.06em;opacity:.75}
 .map{position:relative;border-radius:var(--r-l);overflow:hidden;min-height:300px;background:linear-gradient(var(--green),var(--green-deep));color:var(--on-green);padding:32px;display:flex;flex-direction:column;justify-content:flex-end}
 .map .roads{position:absolute;inset:0;opacity:.3}
 .map .roads line{stroke:var(--yellow);stroke-width:1.2}
