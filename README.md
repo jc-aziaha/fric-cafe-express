@@ -89,7 +89,7 @@ la page s'affiche volontairement sans mouvement.
 
 ## Coordonnées réelles
 
-- WhatsApp / téléphone : **+228 90 45 35 06** (`wa.me/22890453506`)
+- WhatsApp / téléphone : **+228 70 41 54 54** (`wa.me/22870415454`)
 - TikTok : **@fric.cafe.express**
 - Adresse : Atikoumé, face aux rails, Lomé — Togo
 
