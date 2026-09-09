@@ -1,6 +1,6 @@
 # Fric-Café Express — site vitrine
 
-Site statique une page pour la cafétéria **Fric-Café Express**, quartier Atikoumé
+Site statique une page pour la cafétéria **Fric-Café Express**, quartier Attikoumé
 (face aux rails), Lomé — Togo.
 
 Site en une page : `index.html`.
@@ -38,7 +38,7 @@ réinstaller un jour : `npx impeccable install`.
 ## SEO
 
 `index.html` porte : titre et meta description ciblés « cafétéria
-Atikoumé Lomé », balises Open Graph et Twitter Card, `canonical`, `theme-color`,
+Attikoumé Lomé », balises Open Graph et Twitter Card, `canonical`, `theme-color`,
 et des données structurées **schema.org / CafeOrCoffeeShop** (adresse, téléphone,
 horaires, réseaux, carte avec prix en XOF). Testez-les avec l'outil de résultats
 enrichis de Google.
@@ -92,13 +92,13 @@ la page s'affiche volontairement sans mouvement.
 
 - WhatsApp / téléphone : **+228 70 41 54 54** (`wa.me/22870415454`)
 - TikTok : **@fric.cafe.express**
-- Adresse : Atikoumé, face aux rails, Lomé — Togo
+- Adresse : Attikoumé, face aux rails, Lomé — Togo
 
 ## Reste à préciser
 
 - Les horaires d'ouverture sont des valeurs de remplissage, à confirmer.
 - Le seuil de livraison (« dès 2 000 F ») est à confirmer.
-- La carte Google cherche « Atikoumé, Lomé, Togo » et centre donc sur le
+- La carte Google cherche « Attikoumé, Lomé, Togo » et centre donc sur le
   quartier. Pour un repère exact, remplacer la requête par les coordonnées
   du comptoir : `?q=6.xxxx,1.xxxx` dans `index.html`.
 

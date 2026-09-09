@@ -1,6 +1,6 @@
 ---
 name: Fric-Café Express
-description: One-page showcase site for a neighborhood cafeteria in Atikoumé, Lomé — fast counter service, honest pricing, forest-green and citrus signage energy.
+description: One-page showcase site for a neighborhood cafeteria in Attikoumé, Lomé — fast counter service, honest pricing, forest-green and citrus signage energy.
 colors:
   bg: "#FAF4E9"
   surface: "#FFFFFF"

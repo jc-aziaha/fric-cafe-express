@@ -8,7 +8,7 @@ web
 
 ## Users
 
-Neighborhood regulars in Atikoumé, Lomé (Togo): office workers stopping in before work and students between/after classes. They come for a fast coffee or lunch, mostly picked up at the counter; some order delivery by WhatsApp within the immediate quartier. This is a showcase/ordering-info site for an existing physical cafeteria, not a self-serve web app — the visitor's job is to check the menu, prices, hours, and location, then act (walk in or message WhatsApp).
+Neighborhood regulars in Attikoumé, Lomé (Togo): office workers stopping in before work and students between/after classes. They come for a fast coffee or lunch, mostly picked up at the counter; some order delivery by WhatsApp within the immediate quartier. This is a showcase/ordering-info site for an existing physical cafeteria, not a self-serve web app — the visitor's job is to check the menu, prices, hours, and location, then act (walk in or message WhatsApp).
 
 ## Product Purpose
 
@@ -20,7 +20,7 @@ Counter service in under 5 minutes, one honest displayed price with no markup fo
 
 ## Operating Context
 
-- Physical counter service is primary; WhatsApp is the ordering/delivery channel, delivery limited to the Atikoumé quartier.
+- Physical counter service is primary; WhatsApp is the ordering/delivery channel, delivery limited to the Attikoumé quartier.
 - Menu: 24 items across 7 categories (café, thé, frites, spaghettis, couscous & grillades, sandwichs, salades & œufs), defined in `assets/js/app.js`'s `ITEMS` array (`[nom, prix F CFA, catégorie, identifiant image]`) and `CATS`. Adding a dish means one `ITEMS` row plus one image in `assets/img/`.
 - 24 product photos already sourced from the cafeteria's own digital menu (`assets/img/pXXXX.jpg`).
 - Coffee and tea service runs all day; fries/grillades service is a limited daytime window (currently modeled as 11:00–21:00 in copy).
@@ -30,7 +30,7 @@ Counter service in under 5 minutes, one honest displayed price with no markup fo
 
 - No build step: plain static HTML/CSS/JS, opened directly or served as static files (`python -m http.server`). This is an existing, confirmed choice, not open for reconsideration without a reason to change stacks.
 - Menu content (names/prices for all 24 items) comes from the cafeteria's real digital menu and is verified — do not alter without the user's say-so.
-- The following values are explicitly **placeholders**, not verified facts, and must not be presented or treated as confirmed information in any future work until the user supplies real ones: opening hours text, footer/order-button WhatsApp number, TikTok handle, exact address landmark within Atikoumé, and the delivery minimum ("dès 2 000 F"). Same treatment applies to any new placeholder-shaped content introduced later.
+- The following values are explicitly **placeholders**, not verified facts, and must not be presented or treated as confirmed information in any future work until the user supplies real ones: opening hours text, footer/order-button WhatsApp number, TikTok handle, exact address landmark within Attikoumé, and the delivery minimum ("dès 2 000 F"). Same treatment applies to any new placeholder-shaped content introduced later.
 - Bilingual/other-language support is not established; current copy is French only.
 
 ## Brand Commitments
