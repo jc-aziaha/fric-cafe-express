@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fric-Café Express — cafétéria à Atikoumé, Lomé</title>
+<meta name="description" content="Cafétéria de quartier à Atikoumé, face aux rails, à Lomé. Café dès 400 F, thé, spaghettis, couscous, sandwichs et poulet braisé. Au comptoir, à emporter ou livré.">
+<meta name="theme-color" content="#14472A">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.fric-cafe-express.tg/">
+<meta property="og:type" content="restaurant.restaurant">
+<meta property="og:locale" content="fr_TG">
+<meta property="og:site_name" content="Fric-Café Express">
+<meta property="og:title" content="Fric-Café Express — cafétéria à Atikoumé, Lomé">
+<meta property="og:description" content="Café, thé, spaghettis, couscous et grillades. Servi au comptoir en cinq minutes, à Atikoumé, face aux rails.">
+<meta property="og:url" content="https://www.fric-cafe-express.tg/">
+<meta property="og:image" content="https://www.fric-cafe-express.tg/assets/img/p0001.jpg">
+<meta property="og:image:alt" content="Tasse de café classique servie au comptoir de Fric-Café Express">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat+Brush&family=Manrope:wght@400;500;700&family=IBM+Plex+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header>
+  <div class="wrap bar">
+    <div class="logo"><span class="bean"></span>Fric-Café<span class="script">Express</span></div>
+    <nav id="nav" aria-label="Navigation principale">
+      <a href="#carrousel">Le carrousel</a>
+      <a href="#carte">La carte</a>
+      <a href="#maison">La maison</a>
+      <a href="#infos">Horaires</a>
+    </nav>
+    <button class="theme" id="theme" type="button" aria-label="Basculer le thème clair ou sombre">
+      <svg class="i sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.4"/><g stroke-linecap="round"><path d="M12 2.2v2.4"/><path d="M12 19.4v2.4"/><path d="M2.2 12h2.4"/><path d="M19.4 12h2.4"/><path d="M5.1 5.1l1.7 1.7"/><path d="M17.2 17.2l1.7 1.7"/><path d="M18.9 5.1l-1.7 1.7"/><path d="M6.8 17.2l-1.7 1.7"/></g></svg>
+      <svg class="i moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.6A8.6 8.6 0 0 1 9.4 3.5a8.6 8.6 0 1 0 11.1 11.1z"/></svg>
+      <span class="lbl">Clair</span>
+    </button>
+    <button class="burger" id="burger" type="button" aria-expanded="false" aria-controls="nav" aria-label="Ouvrir le menu"><i></i></button>
+  </div>
+  <div class="progress" id="progress"></div>
+</header>
+
+<main id="contenu">
+  <section class="hero" id="hero" aria-labelledby="t-hero">
+    <div class="glow" id="glow" aria-hidden="true"></div>
+    <canvas id="steam" aria-hidden="true"></canvas>
+    <div class="wrap hero-grid">
+      <div>
+        <div class="tagline"><span class="dot"></span><span>Ouvert dès 6h · Atikoumé, face aux rails</span></div>
+        <h1 id="t-hero" data-split><span class="ln">Le café chaud</span><span class="ln">du quartier</span><span class="script">servi express.</span></h1>
+        <p class="lede">Café filtre, thé gingembre, spaghettis et poulet braisé — préparés au comptoir et emballés en moins de cinq minutes. À emporter ou livré dans Atikoumé.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary magnet" href="#carrousel">Faire tourner la carte <span class="arrow">→</span></a>
+          <a class="btn btn-ghost magnet" href="https://wa.me/22890453506?text=Bonjour%20Fric-Caf%C3%A9%20Express%2C%20je%20voudrais%20commander" target="_blank" rel="noopener">Commander par WhatsApp</a>
+        </div>
+        <div class="meta-row">
+          <div><strong data-count="24">0</strong><span class="eyebrow">Plats &amp; boissons</span></div>
+          <div><strong data-count="350" data-suffix=" F">0</strong><span class="eyebrow">À partir de</span></div>
+          <div><strong data-count="5" data-suffix=" min">0</strong><span class="eyebrow">Au comptoir</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="stage">
+          <div class="cluster" id="cluster">
+            <div class="shot a"><img src="assets/img/p0001.jpg" alt="Café classique servi en tasse"></div>
+            <div class="shot b"><img src="assets/img/p0020.jpg" alt="Sandwich au poulet"></div>
+            <div class="shot c"><img src="assets/img/p0016.jpg" alt="Couscous au poulet"></div>
+            <div class="pricetag"><b>500 F</b><em>LE CAFÉ</em></div>
+          </div>
+        </div>
+        <p class="hint">Bougez la souris — la pile suit</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="ribbon" aria-hidden="true"><div class="track" id="track"></div></div>
+
+  <section class="carousel-sec" id="carrousel" aria-labelledby="t-ring">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="eyebrow">Le comptoir en rotation</div>
+          <h2 id="t-ring">Faites tourner<br>la carte</h2>
+        </div>
+        <p>Douze plats sur un anneau. Faites-le tourner à la souris, au doigt, ou laissez-le tourner tout seul.</p>
+      </div>
+      <div class="ring-stage" id="ringStage" role="group" aria-label="Carrousel de douze plats — utilisez les boutons ci-dessous"><div class="ring" id="ring"></div></div>
+      <div class="ring-controls">
+        <button class="rbtn" id="ringPrev">← Précédent</button>
+        <button class="rbtn" id="ringToggle">Pause</button>
+        <button class="rbtn" id="ringNext">Suivant →</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="carte" aria-labelledby="t-carte">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <div class="eyebrow">La carte · prix en francs CFA</div>
+          <h2 id="t-carte">Vingt-quatre<br>références</h2>
+        </div>
+      </div>
+      <div class="tabs" role="group" aria-label="Filtrer la carte par famille" id="tabs"></div>
+      <p class="sr" role="status" aria-live="polite" id="count"></p>
+      <div class="menu-grid" id="grid"></div>
+      <p class="note">Frites et grillades servies de 11 h à 21 h · Le café et le thé, toute la journée.</p>
+    </div>
+  </section>
+
+  <section class="esprit" id="maison" aria-labelledby="t-maison">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><div class="eyebrow">La maison</div><h2 id="t-maison">Trois choses<br>qu'on ne change pas</h2></div>
+        <p>Une cafétéria de quartier tenue comme telle : on connaît les habitués, on sert vite, on ne triche pas sur la portion.</p>
+      </div>
+      <div class="three">
+        <article class="rv"><div class="num">01</div><h3>Le café passé à la demande</h3><p>Classique, corsé, allongé ou cappuccino : chaque tasse est tirée au moment où vous la commandez, jamais réchauffée.</p></article>
+        <article class="rv d1"><div class="num">02</div><h3>La cuisine du midi</h3><p>Spaghettis, couscous, poulet braisé : préparés sur place chaque matin, en quantité comptée pour le service du jour.</p></article>
+        <article class="rv d2"><div class="num">03</div><h3>Le prix affiché</h3><p>De 350 F le thé au citron à 2 500 F les cuisses de poulet braisé. Le tarif du comptoir est le seul tarif.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="infos" aria-labelledby="t-infos">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><div class="eyebrow">Horaires &amp; accès</div><h2 id="t-infos">Passez nous voir</h2></div>
+        <p>Le comptoir ouvre avant les bureaux et ferme après les cours du soir.</p>
+      </div>
+      <div class="infos">
+        <div class="panel rv">
+          <div class="eyebrow">Ouverture</div>
+          <ul class="hours">
+            <li class="now"><span class="d">Lundi – Vendredi</span><span class="h">06:00 – 21:00</span></li>
+            <li><span class="d">Samedi</span><span class="h">07:00 – 21:00</span></li>
+            <li><span class="d">Dimanche</span><span class="h">08:00 – 14:00</span></li>
+            <li><span class="d">Livraison Atikoumé</span><span class="h">dès 2 000 F</span></li>
+          </ul>
+          <div class="cta-row">
+            <a class="btn btn-primary magnet" href="https://wa.me/22890453506?text=Bonjour%20Fric-Caf%C3%A9%20Express%2C%20je%20voudrais%20commander" target="_blank" rel="noopener">Commander par WhatsApp <span class="arrow">→</span></a>
+          </div>
+        </div>
+        <div class="map rv d1" id="mapBox">
+          <iframe class="gmap" id="gmap" title="Plan d'accès — quartier Atikoumé, Lomé" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen
+            src="https://www.google.com/maps?q=Atikoum%C3%A9%2C%20Lom%C3%A9%2C%20Togo&hl=fr&z=15&output=embed"></iframe>
+          <svg class="roads" viewBox="0 0 400 300" preserveAspectRatio="none" aria-hidden="true">
+            <line x1="0" y1="120" x2="400" y2="96"></line><line x1="0" y1="205" x2="400" y2="228"></line>
+            <line x1="150" y1="0" x2="118" y2="300"></line><line x1="286" y1="0" x2="318" y2="300"></line>
+          </svg>
+          <span class="pin"></span>
+          <address>
+            <div class="big">Quartier Atikoumé</div>
+            <div class="sub">Face aux rails, Lomé — Togo.</div>
+          </address>
+          <div class="map-links">
+            <a class="maplink" href="https://www.google.com/maps/search/?api=1&query=Atikoum%C3%A9%2C%20Lom%C3%A9%2C%20Togo" target="_blank" rel="noopener">Ouvrir dans Google Maps</a>
+            <a class="maplink" href="https://www.google.com/maps/dir/?api=1&destination=Atikoum%C3%A9%2C%20Lom%C3%A9%2C%20Togo" target="_blank" rel="noopener">Itinéraire →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<a class="fab" id="fab" href="https://wa.me/22890453506?text=Bonjour%20Fric-Caf%C3%A9%20Express%2C%20je%20voudrais%20commander" target="_blank" rel="noopener" aria-label="Commander par WhatsApp au +228 90 45 35 06 (nouvelle fenêtre)">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.05a9.9 9.9 0 0 0-8.5 14.94L2 22l5.15-1.44A9.9 9.9 0 1 0 12 2.05zm0 1.9a8 8 0 0 1 6.3 12.93l-.3.37.6 2.18-2.25-.6-.35.2A8 8 0 1 1 12 3.95zm-3.1 4.2c-.2 0-.5.07-.77.36-.26.29-1 .98-1 2.4s1.03 2.78 1.17 2.97c.15.2 2 3.18 4.9 4.33 2.4.95 2.9.76 3.42.71.52-.05 1.68-.68 1.92-1.35.24-.66.24-1.23.17-1.35-.07-.12-.26-.2-.55-.34-.29-.15-1.68-.83-1.94-.92-.26-.1-.45-.15-.64.14-.19.29-.73.92-.9 1.11-.16.2-.33.22-.62.07-.29-.14-1.2-.44-2.29-1.41-.85-.75-1.42-1.68-1.58-1.97-.17-.29-.02-.44.12-.59.13-.13.29-.34.44-.51.14-.17.19-.29.29-.49.1-.19.05-.36-.02-.51-.07-.14-.63-1.55-.87-2.12-.22-.53-.44-.46-.6-.47h-.16z"/></svg>
+  <span>Commander</span>
+</a>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <div class="logo"><span class="bean"></span>Fric-Café<span class="script">Express</span></div>
+        <p style="color:rgba(252,247,236,.7);max-width:34ch;margin-top:12px;font-size:.94rem">Cafétéria de quartier à Atikoumé, face aux rails, Lomé. Café, petite restauration, service rapide.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <div class="eyebrow" style="color:var(--yellow)">Suivez le comptoir</div>
+        <a class="social" href="https://www.tiktok.com/@fric.cafe.express" target="_blank" rel="noopener">♪ TikTok · @fric.cafe.express</a>
+        <a class="social" href="https://wa.me/22890453506" target="_blank" rel="noopener">✆ WhatsApp · +228 90 45 35 06</a>
+      </div>
+    </div>
+    <div class="legal"><span>© 2026 Fric-Café Express — Atikoumé, face aux rails, Lomé</span><span>Ouvert 7j/7</span></div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"CafeOrCoffeeShop",
+  "name":"Fric-Café Express",
+  "description":"Cafétéria de quartier à Atikoumé, face aux rails, Lomé : café, thé, spaghettis, couscous, sandwichs et grillades, au comptoir ou à emporter.",
+  "address":{"@type":"PostalAddress","streetAddress":"Atikoumé, face aux rails","addressLocality":"Lomé","addressCountry":"TG"},
+  "telephone":"+22890453506",
+  "priceRange":"350 – 2500 XOF",
+  "currenciesAccepted":"XOF",
+  "servesCuisine":["Café","Cuisine togolaise","Restauration rapide"],
+  "sameAs":["https://www.tiktok.com/@fric.cafe.express"],
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"06:00","closes":"21:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"07:00","closes":"21:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Sunday","opens":"08:00","closes":"14:00"}
+  ],
+  "hasMenu":{
+    "@type":"Menu","name":"Carte du comptoir","inLanguage":"fr",
+    "hasMenuSection":[
+      {"@type":"MenuSection","name":"Café","hasMenuItem":[
+        {"@type":"MenuItem","name":"Café classique","offers":{"@type":"Offer","price":"500","priceCurrency":"XOF"}},
+        {"@type":"MenuItem","name":"Cappuccino","offers":{"@type":"Offer","price":"700","priceCurrency":"XOF"}},
+        {"@type":"MenuItem","name":"Chocolat au lait","offers":{"@type":"Offer","price":"800","priceCurrency":"XOF"}}]},
+      {"@type":"MenuSection","name":"Thé","hasMenuItem":[
+        {"@type":"MenuItem","name":"Thé au citron","offers":{"@type":"Offer","price":"350","priceCurrency":"XOF"}},
+        {"@type":"MenuItem","name":"Thé au gingembre","offers":{"@type":"Offer","price":"500","priceCurrency":"XOF"}}]},
+      {"@type":"MenuSection","name":"Plats","hasMenuItem":[
+        {"@type":"MenuItem","name":"Spaghettis à la viande","offers":{"@type":"Offer","price":"1500","priceCurrency":"XOF"}},
+        {"@type":"MenuItem","name":"Couscous au bœuf","offers":{"@type":"Offer","price":"1800","priceCurrency":"XOF"}},
+        {"@type":"MenuItem","name":"Cuisses de poulet braisé","offers":{"@type":"Offer","price":"2500","priceCurrency":"XOF"}}]},
+      {"@type":"MenuSection","name":"Sandwichs","hasMenuItem":[
+        {"@type":"MenuItem","name":"Sandwich au thon","offers":{"@type":"Offer","price":"1000","priceCurrency":"XOF"}},
+        {"@type":"MenuItem","name":"Sandwich au bœuf","offers":{"@type":"Offer","price":"2000","priceCurrency":"XOF"}}]}
+    ]
+  }
+}
+</script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
