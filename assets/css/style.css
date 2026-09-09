@@ -114,6 +114,11 @@ h1 .script{display:block;font-size:clamp(2.1rem,4.6vw,3.4rem);color:var(--orange
 .js.go .dishes li:nth-child(2){transition-delay:.58s}
 .js.go .dishes li:nth-child(3){transition-delay:.66s}
 @media(max-width:620px){.dishes li{font-size:.84rem;padding:7px 13px}}
+@media(max-width:620px){
+  .front .cap{flex-direction:column;align-items:flex-start;gap:3px;padding:10px 12px 12px}
+  .front .cap h3{font-size:.9rem}
+  .front .cap .price{font-size:.92rem}
+}
 .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin-top:30px}
 .btn{display:inline-flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;font-size:.94rem;padding:14px 24px;border-radius:999px;border:2px solid transparent;position:relative;will-change:transform;transition:box-shadow .25s,background .25s,color .25s}
 .btn-primary{background:var(--orange);color:#FFF8EF;box-shadow:0 12px 26px -14px rgba(224,89,26,.9)}
@@ -192,6 +197,7 @@ section{padding:88px 0}
 .face.front{display:grid;grid-template-rows:1fr auto;gap:0}
 .front img{width:100%;height:100%;min-height:0;object-fit:cover}
 .front .cap{padding:12px 14px;display:flex;justify-content:space-between;align-items:baseline;gap:10px;background:var(--surface)}
+picture{display:contents}
 .front .cap h3{font-family:"Manrope",sans-serif;text-transform:none;font-weight:700;font-size:.95rem;line-height:1.2}
 .front .cap .price{font-size:.9rem;font-weight:600;color:var(--orange)}
 .back{transform:rotateY(180deg);background:var(--green);color:var(--on-green);border-color:var(--green);justify-content:center;align-items:center;text-align:center;padding:22px;gap:10px}

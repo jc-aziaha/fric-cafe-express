@@ -2,6 +2,7 @@ const RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
 document.documentElement.classList.add('js');
 
 const IMG_SRC = id => `assets/img/${id}.jpg`;
+const PIC = function(id,alt,sizes){return '<picture>'+'<source type="image/webp" srcset="assets/img/'+id+'-sm.webp 300w, assets/img/'+id+'.webp 440w" sizes="'+sizes+'">'+'<img src="assets/img/'+id+'.jpg" alt="'+alt+'" width="440" height="440" loading="lazy" decoding="async">'+'</picture>';};
 
 const CATS=[{id:'tous',label:'Tout voir'},{id:'cafe',label:'Café'},{id:'the',label:'Thé'},{id:'frites',label:'Frites'},{id:'pates',label:'Spaghettis'},{id:'couscous',label:'Couscous & grillades'},{id:'sandwich',label:'Sandwichs'},{id:'salade',label:'Salades & œufs'}];
 const ITEMS=[
@@ -119,7 +120,7 @@ document.querySelectorAll('[data-count]').forEach(el=>{
   const N=data.length, STEP=360/N, R=Math.round((250/2)/Math.tan(Math.PI/N));
   ring.innerHTML=data.map(([name,price,,id],i)=>`
     <figure class="cell" style="transform:rotateY(${i*STEP}deg) translateZ(${R}px)">
-      <img src="${IMG_SRC(id)}" alt="${name}" loading="lazy">
+      ${PIC(id,name,'(max-width:620px) 190px, 250px')}
       <figcaption class="lbl"><b>${name}</b><span>${fmt(price)}</span></figcaption>
     </figure>`).join('');
   const cells=[...ring.children];
@@ -158,7 +159,7 @@ document.querySelectorAll('[data-count]').forEach(el=>{
     <article class="card" data-cat="${cat}" tabindex="0">
       <div class="flip">
         <div class="face front">
-          <img src="${IMG_SRC(id)}" alt="${name}" loading="lazy">
+          ${PIC(id,name,'(max-width:620px) 45vw, 240px')}
           <div class="cap"><h3>${name}</h3><span class="price">${fmt(price)}</span></div>
         </div>
         <div class="face back">
